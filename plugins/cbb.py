@@ -1,5 +1,3 @@
-#(©)Codexbotz
-
 from pyrogram import __version__
 from bot import Bot
 from config import OWNER_ID
@@ -10,7 +8,7 @@ async def cb_handler(client: Bot, query: CallbackQuery):
     data = query.data
     if data == "about":
         await query.message.edit_text(
-            text = f"<b>○ ᴄʀᴇᴀᴛᴏʀ : <a href='tg://user?id={OWNER_ID}'>ᴛʜɪs ᴘᴇʀsᴏɴ</a>\n○ Language : <code>ᴘʏᴛʜᴏɴ𝟹</code>\n○ ʟɪʙʀᴀʀʏ : <a href='https://docs.pyrogram.org/'>Pyrogram asyncio {__version__}</a>\n○ sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ : <a href='https://t.me/+_pE2GS9l6CI4N2E1'>Click here</a>\n○ Channel : @team_ligit\n○ sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ : @sastatony</b>",
+            text = f"<b>○ ᴄʀᴇᴀᴛᴏʀ : <a href='tg://user?id={OWNER_ID}'>ᴛʜɪs ᴘᴇʀsᴏɴ</a>\n○ Language : <code>ᴘʏᴛʜᴏɴ𝟹</code>\n○ ʟɪʙʀᴀʀʏ : <a href='https://docs.pyrogram.org/'>Pyrogram asyncio {__version__}</a>\n○ FOR VIDEOS: <a href='https://t.me/pindaalejatt0'>Click here</a>\n○ Channel : @GARRYPLAYS \n○ sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ : https://t.me/+ArwrDduOvNlmYWl1</b>",
             disable_web_page_preview = True,
             reply_markup = InlineKeyboardMarkup(
                 [
